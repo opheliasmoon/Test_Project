@@ -1,0 +1,17 @@
+<h2>Shared Information</h2>
+
+{% if "diagnosis" in fields %}
+<p><b>Diagnosis:</b> {{ disclosure[2] }}</p>
+{% endif %}
+
+{% if "medications" in fields %}
+<p><b>Medications:</b> {{ disclosure[3] }}</p>
+{% endif %}
+
+{% if "therapy_type" in fields %}
+<p><b>Therapy Type:</b> {{ disclosure[4] }}</p>
+{% endif %}
+
+{% if "notes" in fields %}
+<p><b>Notes:</b> {{ disclosure[5] }}</p>
+{% endif %}
