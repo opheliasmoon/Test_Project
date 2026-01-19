@@ -1,0 +1,16 @@
+<form method="POST">
+  <h3>Select fields to share</h3>
+  <input type="checkbox" name="fields" value="diagnosis"> Diagnosis<br>
+  <input type="checkbox" name="fields" value="medications"> Medications<br>
+  <input type="checkbox" name="fields" value="therapy_type"> Therapy Type<br>
+  <input type="checkbox" name="fields" value="notes"> Notes<br>
+
+  <h3>Select recipient</h3>
+  <select name="recipient">
+    {% for r in recipients %}
+      <option value="{{ r[0] }}">{{ r[2] }} ({{ r[3] }})</option>
+    {% endfor %}
+  </select><br>
+
+  <button>Send Disclosure</button>
+</form>
